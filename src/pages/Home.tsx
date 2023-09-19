@@ -1,14 +1,16 @@
 import React from 'react';
+import Search from "../components/Search/Search";
 
 const Home:React.FC= () => {
     return (
         <main className="main">
-            <section className="content">
+            <section className="main__content">
                 <div className="left">
-                    <div className="left__top"></div>
-
+                        <Search/>
+                    <div className="left__middle">2</div>
+                    <div className="left__items">3</div>
                 </div>
-                <div className="right"></div>
+                <div className="right">1</div>
             </section>
         </main>
     );

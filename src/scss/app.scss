@@ -6,12 +6,33 @@ body {
 }
 
 .wrapper {
+
   height: 100%;
 
   .content {
     margin: 30px auto;
-    padding: 40px 0;
-    background-color: #4c7cc2;
+    padding: 0;
+    background-color: #F1F2F3;
     max-width: 1140px;
+
+    min-height: 940px;
+
+  }
+}
+
+.main__content {
+  display: grid;
+  grid-template-columns: 366px 1fr;
+  column-gap: 30px;
+  min-height: 940px;
+  .left {
+    padding: 0;
+    margin: 0;
+    background-color: #365e2d;
+  }
+  .right {
+    padding: 0;
+    margin: 0;
+    background-color: #365e2d;
   }
 }
