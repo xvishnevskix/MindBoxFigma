@@ -19,9 +19,11 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/i,
                 use: ["style-loader", "css-loader", "sass-loader"],
-            } /* rules to process .scss, .sass files */,
+            },
+            /* rules to process .scss, .sass files */,
         ],
-    } /* determines how different module types will be treated */,
+    }
+    /* determines how different module types will be treated */,
     output: {
         path: path.resolve(__dirname, "./build"),
         filename: "bundle.js",
@@ -34,7 +36,7 @@ module.exports = {
     } /* options for webpack-dev-server */,
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, "./src/index.html"),
+            template: path.resolve(__dirname, "./public/index.html"),
         }) /* simplifies the creation of HTML files to serve your webpack bundles */,
     ],
 };

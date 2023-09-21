@@ -1,6 +1,7 @@
 import React from 'react';
 import Search from "../components/Search/Search";
 import MiddleMenu from "../components/MiddleMenu/MiddleMenu";
+import Contacts from "../components/Contacts/Contacts";
 
 const Home:React.FC= () => {
     return (
