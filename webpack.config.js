@@ -20,9 +20,15 @@ module.exports = {
                 test: /\.s[ac]ss$/i,
                 use: ["style-loader", "css-loader", "sass-loader"],
             },
+            {
+                test: /\.(png|jpg|ttf|eot|svg|woff(2)?)(\S+)?$/,
+                use: ['file-loader']
+            },
+
             /* rules to process .scss, .sass files */,
         ],
     }
+
     /* determines how different module types will be treated */,
     output: {
         path: path.resolve(__dirname, "./build"),

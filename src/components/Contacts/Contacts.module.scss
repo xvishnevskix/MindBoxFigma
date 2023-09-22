@@ -1,11 +1,45 @@
 .container {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  max-width: 366px;
+  background-color: #FFFFFF;
+  position: relative;
+  box-shadow: 0 1px 4px  rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
 
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url("/public/images/Rectangle.svg");
+    background-size: 2px 60px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s, visibility 0.3s;
+
+  }
+
+  &:hover,
+  &:focus-visible {
+    &:before {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
 
 .img {
-
+    margin: 0 10px;
 }
 
 .name {
-
+    font-size: 16px;
+    line-height: 20px;
+  color: #161718;
+  font-weight: 400;
 }
