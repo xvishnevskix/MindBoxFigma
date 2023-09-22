@@ -21,8 +21,8 @@ module.exports = {
                 use: ["style-loader", "css-loader", "sass-loader"],
             },
             {
-                test: /\.(png|jpg|ttf|eot|svg|woff(2)?)(\S+)?$/,
-                use: ['file-loader']
+                test: /\.(jpg|png|svg|gif)$/,
+                type: 'asset/resource',
             },
 
             /* rules to process .scss, .sass files */,

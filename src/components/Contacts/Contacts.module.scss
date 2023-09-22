@@ -6,7 +6,46 @@
   background-color: #FFFFFF;
   position: relative;
   box-shadow: 0 1px 4px  rgba(0, 0, 0, 0.1);
-  border-radius: 7px;
+  border-radius: 4px;
+
+  &:last-of-type {
+    justify-content: end;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .sendBtn {
+    width: 16px;
+    height: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition:  transform 0.4s, opacity 0.3s, visibility 0.3s;
+    margin-left: auto;
+    margin-right: 30px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    .sendBtn {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(4px);
+    }
+  }
+
+  .icon {
+    transition: transform 0.4s;
+    &:hover {
+
+    }
+  }
+
+
 
 
   &:before {
@@ -18,8 +57,9 @@
     bottom: 0;
     background-image: url("/public/images/Rectangle.svg");
     background-size: 2px 60px;
-    opacity: 1;
-    visibility: visible;
+    background-repeat: no-repeat;
+    opacity: 0;
+    visibility: hidden;
     transition: opacity 0.3s, visibility 0.3s;
 
   }
